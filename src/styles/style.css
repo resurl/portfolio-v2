@@ -5,5 +5,39 @@
 @tailwind utilities;
 
 html, body, #___gatsby, #gatsby-focus-wrapper {
-    height: 100%;
+    @apply h-full
+}
+
+.content-empty {
+    content: ''
+}
+
+.ease-smooth {
+    transition: top 200ms cubic-bezier(0, .8, .13, 1);
+}
+
+.lnk {
+    @apply no-underline;
+    @apply leading-snug;
+    @apply relative;
+}
+
+.lnk:after {
+    @apply content-empty;
+    @apply -z-1;
+    @apply bg-seagreen;
+    @apply absolute;
+    @apply top-60;
+    @apply -left-01;
+    @apply -right-01;
+    @apply bottom-0;
+    @apply ease-smooth;
+}
+
+.lnk:hover:after {
+    @apply top-0;
+}
+
+.project {
+    
 }
