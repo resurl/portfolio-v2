@@ -20,7 +20,7 @@ export default function About() {
                 from computer-related things, I also like finding new music to listen to, reading, watching sci-fi 
                 movies, my dog, and playing guitar.
             </p>
-            <p>
+            <p class='hidden md:visible'>
                 Click on the entries to the right to expand them!
             </p>
             <p>

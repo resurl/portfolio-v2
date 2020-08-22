@@ -50,14 +50,14 @@ function Home() {
 
   useEffect(() => {
     setData(projects)
-  }, [])
+  }, []);
 
   return (
-    <div className='container py-8 box-border flex justify-start items-center h-full text-xl text-copy'>
+    <div className='container py-8 box-border flex justify-start items-center h-full text-lg md:text-xl text-copy'>
       <div className='mx-8 max-w-lg flex-third'>
         <About />
       </div>
-      <div className='mx-8 box-border overflow-auto h-full flex flex-col justify-center'>
+      <div className='mx-8 box-border overflow-auto h-full flex flex-col justify-center hidden md:visible'>
         <ProjectView data={userData} />
       </div>
     </div>
