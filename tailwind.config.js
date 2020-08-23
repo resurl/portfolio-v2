@@ -5,7 +5,7 @@ module.exports = {
       center: true
     },
     fontFamily: {
-      body: ['Rubik', 'sans-serif', '-apple-system']
+      rubik: ['Rubik', 'sans-serif', '-apple-system']
     },
     extend: {
       colors: {
@@ -25,6 +25,13 @@ module.exports = {
       },
       flex: {
         'third': '0 0 60%'
+      },
+      maxHeight: {
+        'third': '33%'
+      },
+      padding: {
+        '28': '7rem',
+        '30': '7.5rem',
       }
     },
   },

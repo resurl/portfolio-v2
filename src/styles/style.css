@@ -37,7 +37,3 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
 .lnk:hover:after {
     @apply top-0;
 }
-
-.project {
-    
-}
