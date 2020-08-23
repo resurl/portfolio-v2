@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import About from '../About'
-import { projects } from '../data'
+import { projects as myProjects } from '../data'
 
 const Project = (props) => {
   const [expand, setExpand] = useState(false);
@@ -34,13 +34,23 @@ const Project = (props) => {
 
 const ProjectView = (props) => { 
   const [projects, setProjects] = useState([]);
+  const [loaded, setLoaded] = useState(false);
   
   useEffect(() => {
-    loadProjects(true)
+    setProjects(loadProjects(true))
+    console.log(props.data);
   },[])
 
   useEffect(() => {
-    setProjects(loadProjects(props.isMinimized));
+    if (projects.length > 0 && !loaded)
+      setLoaded(true)
+    
+  },[projects])
+
+  useEffect(() => {
+    if (projects && loaded)
+      setProjects(loadProjects(props.isMinimized));
+
   }, [props.isMinimized])
 
   function loadProjects(mini) {
@@ -53,12 +63,20 @@ const ProjectView = (props) => {
         isMini={mini}
         key={idx} />
     );
+    console.log(jsx)
+    return jsx
+  }
+
+  const loadingData = () => {
+    let jsx = [];
+    for (let i = 0; i < 5; i++)
+      jsx.push(<div className='w-64 h-10 bg-gray-500' key={i}></div>)
     return jsx
   }
 
   return (
     <div className='overflow-scroll space-y-4 max-w-full h-full'>
-      {projects}
+      {loaded ? projects : loadingData()}
     </div>
   )
 }
@@ -66,15 +84,15 @@ const ProjectView = (props) => {
 
 
 function Home() {
-  const [userData, setData] = useState([]);
   const [minimized, setMini] = useState(true);
-
-  useEffect(() => {
-    setData(projects);
-  }, []);
 
   function toggleMinimize() {
     setMini(!minimized);
+  }
+
+  function keyDownMinimize(e) {
+    if (e.key === 'Enter')
+      setMini(!minimized)
   }
 
   return (
@@ -83,8 +101,10 @@ function Home() {
         <About />
       </div>
       <div className='mx-8 box-border overflow-auto h-full space-y-4 flex flex-col justify-center invisible md:visible lg:visible xl:visible'>
-        <div className='w-32 h-10 font-semibold py-1 text-center align-text-bottom cursor-pointer bg-teal-500 rounded-md text-white hover:bg-teal-600 select-none' onClick={toggleMinimize}>{minimized ? 'Expand' : 'Minimize'} all</div>
-        <ProjectView data={userData} isMinimized={minimized} />
+        <div className='w-32 h-10 font-semibold py-1 text-center align-text-bottom cursor-pointer bg-teal-500 rounded-md text-white hover:bg-teal-600 select-none' 
+          onClick={toggleMinimize}
+          onKeyDown={keyDownMinimize}>{minimized ? 'Expand' : 'Minimize'} all</div>
+        <ProjectView data={myProjects} isMinimized={minimized} />
       </div>
     </div>
   );
