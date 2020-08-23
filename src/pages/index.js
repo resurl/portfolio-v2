@@ -38,7 +38,6 @@ const ProjectView = (props) => {
   
   useEffect(() => {
     setProjects(loadProjects(true))
-    console.log(props.data);
   },[])
 
   useEffect(() => {
