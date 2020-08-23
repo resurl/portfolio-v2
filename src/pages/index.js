@@ -57,7 +57,7 @@ function Home() {
       <div className='mx-8 max-w-lg flex-third'>
         <About />
       </div>
-      <div className='mx-8 box-border overflow-auto h-full flex flex-col justify-center hidden md:visible'>
+      <div className='mx-8 box-border overflow-auto h-full flex flex-col justify-center invisible md:visible lg:visible xl:visible'>
         <ProjectView data={userData} />
       </div>
     </div>
