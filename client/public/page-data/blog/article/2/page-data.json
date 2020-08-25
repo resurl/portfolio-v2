@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-article-view-js","path":"/blog/article/2","result":{"data":{"strapiArticle":{"strapiId":2,"title":"Test Article 2","content":"More uhhhhhhhh text"}},"pageContext":{"id":2}},"staticQueryHashes":[]}
+{"componentChunkName":"component---src-templates-article-view-js","path":"/blog/article/2","result":{"data":{"strapiArticle":{"strapiId":2,"title":"Test Article 2","content":"More uhhhhhhhh text","created_at":"2020-08-25T01:56:50.009Z"}},"pageContext":{"id":2}},"staticQueryHashes":[]}

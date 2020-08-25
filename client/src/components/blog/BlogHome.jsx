@@ -9,7 +9,7 @@ export default function BlogHome({ articles }) {
     )
 
     return (
-        <div className='space-y-3'>
+        <div className='space-y-3 mb-8'>
             {articleList}        
         </div>
     )

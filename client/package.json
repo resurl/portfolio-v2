@@ -18,8 +18,11 @@
     "gatsby-plugin-postcss": "^2.3.11",
     "gatsby-source-strapi": "0.0.12",
     "js-yaml": "^3.14.0",
+    "moment": "^2.27.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-markdown": "^4.3.1",
+    "react-moment": "^0.9.7"
   },
   "devDependencies": {
     "prettier": "2.0.5",
