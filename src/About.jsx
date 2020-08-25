@@ -17,11 +17,11 @@ export default function About() {
                 Besides <a className='lnk' href={contacts.email}>e-mail</a>, you can also contact me on <a className='lnk' href={contacts.linkedin} target="_blank" rel='noreferrer'>Linkedin</a>.
             </p>
             <p>
-                My most recent tech fixations are on programming language theory and scalability, but aside
+                My most recent tech fixation is on programming language theory, but aside
                 from computer-related things, I also like finding new music to listen to, reading, watching sci-fi 
                 movies, my dog, and playing guitar.
             </p>
-            <p className='invisible hidden sm:hidden md:visible md:contents lg:visible lg:contents xl:visible lg:contents'>
+            <p className='invisible hidden sm:hidden md:visible md:contents lg:visible lg:contents xl:visible xl:contents'>
                 Click on the entries to the right to expand them!
             </p>
             <p>
