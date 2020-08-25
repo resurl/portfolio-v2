@@ -5,7 +5,7 @@ export default function BlogHome({ articles }) {
 
     const articleList = articles.map((article, idx) => 
         <Article title={article.node.title}
-            body={article.node.content} key={idx} />
+            body={article.node.content} id={article.node.id} key={idx} />
     )
 
     return (

@@ -16,7 +16,7 @@ function Home() {
   }
 
   return (
-    <div className='container py-20 lg:py-28 xl:py-32 box-border flex justify-start items-center h-full text-sm sm:text-md md:text-lg lg:text-lg xl:text-lg'>
+    <div className='container py-16 lg:py-24 xl:py-28 box-border flex justify-start items-center h-full text-sm sm:text-md md:text-lg lg:text-lg xl:text-lg'>
       <div className='mx-8 max-w-lg flex-third'>
         <About />
       </div>
