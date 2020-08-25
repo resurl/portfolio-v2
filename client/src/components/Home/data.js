@@ -14,6 +14,13 @@ const projects = [
         link: 'https://github.com/resurreccionl/sorting-viz'
     },
     {
+        name: 'Personal Website',
+        type: 'gh',
+        langs: 'JavaScript, Gatsby, Strapi, Tailwind CSS',
+        desc: 'This website! I thought my old React design was extremely plain and I wanted to try out Tailwind and Strapi, so I created this landing page and a blog. Gatsby and Strapi\'s synergy, combined with GraphQL, makes updating and redesigning this website extremely easy, thanks to the separation of concerns the two frameworks provide.',
+        link: 'https://resurreccion.tech'
+    },
+    {
         name: 'i8080 Emulator',
         type: 'gh',
         langs: 'C, SDL2',

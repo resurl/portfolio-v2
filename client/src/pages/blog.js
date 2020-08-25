@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import ArticleView from '../components/blog/ArticleView'
+import BlogHome from '../components/blog/BlogHome'
 import { StaticQuery, graphql} from 'gatsby'
 
 function Blog(props) {
@@ -17,11 +17,12 @@ function Blog(props) {
                 }
             }
         }`
+        
     return (
         <Layout location={props.location}>
             <StaticQuery query={query}
                 render={data => (
-                    <ArticleView articles={data.allStrapiArticle.edges} />
+                    <BlogHome articles={data.allStrapiArticle.edges} />
                     )} />
         </Layout>
     )
