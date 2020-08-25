@@ -4,6 +4,10 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 module.exports = {
   /* Your site config here */
   plugins: [
@@ -11,10 +15,10 @@ module.exports = {
     {
       resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: 'http://localhost:1337',
+        apiURL: process.env.API_URL ||`http://localhost:1337`,
         contentTypes: [
           'article',
-          'user'
+          'category'
         ],
         queryLimit: 1000
       }

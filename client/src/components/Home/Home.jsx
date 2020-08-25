@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import About from './About'
 import ProjectView from './ProjectView'
-import { projects } from '../data.js'
+import { projects } from './data.js'
 
 function Home() {
   const [minimized, setMini] = useState(true);

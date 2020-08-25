@@ -12,12 +12,12 @@ function NavLink(props) {
 export default function BlogHeader() {
     
     return (
-        <header class='flex flex-col sm:flex-row w-full justify-center items-center sm:justify-between'>
+        <header className='pb-6 flex flex-col sm:flex-row w-full justify-center items-center sm:justify-between'>
             <Link className='text-lg font-semibold' to='/'>Leanna Resurreccion</Link>
             <ul className='list-none flex justify-around space-x-8'>
-                <NavLink>Home</NavLink >
-                <NavLink>Articles</NavLink>
-                <NavLink>Tags</NavLink>
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/blog'>Articles</NavLink>
+                <NavLink to='/blog/tagged'>Tags</NavLink>
             </ul>
         </header>
     );

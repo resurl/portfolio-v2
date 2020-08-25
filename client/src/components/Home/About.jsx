@@ -1,5 +1,5 @@
 import React from 'react'
-import { contacts } from '../data'
+import { contacts } from './data'
 import { Link } from 'gatsby'
 
 export default function About() {

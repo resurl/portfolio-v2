@@ -1,5 +1,5 @@
 import React from 'react'
-import BlogHeader from './BlogHeader'
+import BlogHeader from './blog/BlogHeader'
 
 export default function Layout(props) {
     const isHome = (props.location.pathname === '/')

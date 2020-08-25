@@ -1,6 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import Layout from '../components/layout'
-import Home from '../components/Home'
+import Home from '../components/Home/Home'
 
 export default function Index(props) {
   return (
