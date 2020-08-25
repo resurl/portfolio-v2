@@ -16,11 +16,11 @@ function Home() {
   }
 
   return (
-    <div className='py-20 lg:py-28 xl:py-32 box-border flex justify-start items-center h-full text-sm sm:text-md md:text-lg lg:text-lg xl:text-lg'>
+    <div className='container py-20 lg:py-28 xl:py-32 box-border flex justify-start items-center h-full text-sm sm:text-md md:text-lg lg:text-lg xl:text-lg'>
       <div className='mx-8 max-w-lg flex-third'>
         <About />
       </div>
-      <div className='px-8 box-border overflow-auto h-full space-y-4  invisible hidden sm:visible sm:flex flex-col justify-center'>
+      <div className='px-8 box-border overflow-auto h-full space-y-4 invisible hidden sm:visible sm:flex flex-col'>
         <div className='w-32 h-10 font-semibold py-1 text-center align-text-bottom cursor-pointer bg-teal-500 rounded-md text-white hover:bg-teal-600 select-none' 
           onClick={toggleMinimize}
           onKeyDown={keyDownMinimize}>{minimized ? 'Expand' : 'Minimize'} all</div>
