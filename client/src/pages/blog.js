@@ -11,15 +11,17 @@ function Blog(props) {
                 edges {
                     node {
                         id
+                        article_id
                         title
                         content
+                        published_at
                     }
                 }
             }
         }`
         
     return (
-        <Layout location={props.location}>
+        <Layout className='' location={props.location}>
             <StaticQuery query={query}
                 render={data => (
                     <BlogHome articles={data.allStrapiArticle.edges} />

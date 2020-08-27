@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import About from './About'
 import ProjectView from './ProjectView'
-import { projects } from './data.js'
+//import { projects } from './data.js'
 
-function Home() {
+function Home({ projects }) {
   const [minimized, setMini] = useState(true);
 
   function toggleMinimize() {

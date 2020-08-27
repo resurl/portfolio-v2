@@ -1,12 +1,23 @@
 import React from 'react'
-import { contacts } from './data'
 import { Link } from 'gatsby'
+
+const contacts = {
+    email: 'mailto:leanna.resurreccion@gmail.com',
+    linkedin: 'https://linkedin.com/in/leanna-resurreccion-b3b54a130',
+    devpost: 'https://devpost.com/resurreccionl?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav',
+    github: 'https://github.com/resurreccionl'
+}
 
 export default function About() {
 
     return (
-        <div className='font-rubik space-y-2'>
-            <h1 className='font-semibold text-3xl sm:text-4xl '>Hello!</h1>
+        <div className='font-rubik text-lg space-y-3 leading-6 sm:text-xl sm:space-y-3 sm:leading-8'>
+            <div>
+                <h1 className='font-semibold text-3xl sm:text-5xl '>Hello!</h1>
+                <p className='invisible hidden text-sm text-gray-600 sm:visible sm:inline-block'>
+                    Click the entries to the right or "Expand all" to see project details!
+                </p>
+            </div>
             <p>My name's Leanna Resurreccion.</p>
             <p>
                 I'm currently a 2nd year computer science undergrad at the University
@@ -19,13 +30,10 @@ export default function About() {
                 I keep a <Link className='lnk' to='/blog'>blog</Link>!
             </p>
             <p>
-                My most recent tech fixation is on programming language theory, but aside
+                My most recent tech fixation is programming language theory, but aside
                 from computer-related things, I also like film, discovering new music, my dog, and reading!
             </p>
-            <p className='invisible hidden sm:visible sm:inline-block'>
-                Click on the entries to the right or the "Expand all" to reveal details about the project!
-            </p>
-            <p className='sm:invisible sm:hidden'>Admittedly, this site's a little less plain on desktop.</p>
+            <p className='sm:invisible sm:hidden'>Admittedly, this site's a little less plain on screen sizes greater than 640px.</p>
             <p>
                 This website was built with Gatsby, Strapi, and TailwindCSS.
             </p>

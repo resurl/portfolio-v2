@@ -20,12 +20,12 @@ export default function ProjectView(props) {
     }, [props.isMinimized])
   
     function loadProjects(mini) {
-      let jsx = props.data.map((obj, idx) => 
-        <Project name={obj.name} 
-          langs={obj.langs} 
-          desc={obj.desc} 
-          type={obj.type}
-          link={obj.link}
+      let jsx = props.data.map((proj, idx) => 
+        <Project name={proj.node.name} 
+          langs={proj.node.langs} 
+          desc={proj.node.desc} 
+          type={proj.node.type}
+          link={proj.node.link}
           isMini={mini}
           key={idx} />
       );
