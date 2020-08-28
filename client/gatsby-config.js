@@ -16,7 +16,7 @@ module.exports = {
       resolve: 'gatsby-source-strapi',
       options: {
         apiURL: process.env.DEPLOY_URL ? 
-          `https://shrouded-island-48404.herokuapp.com/` 
+          `https://shrouded-island-48404.herokuapp.com` 
           : `http://localhost:1337`,
         contentTypes: [
           'article',
