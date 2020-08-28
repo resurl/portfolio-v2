@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function NotFound() {
+export default function NotFound(props) {
     return (
-        <div className='text-xl'>
-            Oh no! Something went wrong :(
-        </div>
+        <Layout location={props.location}>
+            <p>Oh no! Something went wrong :(</p>
+            <Link className='lnk'  to='/'>Go back {`>`}</Link>
+        </Layout>
     )
 }
