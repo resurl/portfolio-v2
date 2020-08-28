@@ -1,6 +1,6 @@
 # resurreccion.tech
 
-!(site preview)[https://github.com/resurreccionl/portfolio-v2/blob/master/client/public/preview.png]
+![site preview](https://github.com/resurreccionl/portfolio-v2/blob/master/client/public/preview.png)
 My personal website built with Gatsby, Strapi and Tailwind CSS.
 
 ## Prerequisites
