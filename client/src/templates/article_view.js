@@ -18,7 +18,6 @@ export const query = graphql`
 
 export default function ArticleView(props) {
     const article = props.data.strapiArticle;
-    console.log(article.published_at)
     return (
         <Layout location={props.location}>
             <article className='font-rubik w-3/5'>
