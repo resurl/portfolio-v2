@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Project"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "text"
+    },
+    "langs": {
+      "type": "text"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    },
+    "when": {
+      "type": "date"
+    }
+  }
+}
