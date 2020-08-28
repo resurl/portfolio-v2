@@ -11,7 +11,7 @@ const contacts = {
 export default function About() {
 
     return (
-        <div className='font-rubik text-lg space-y-3 leading-6 sm:text-xl sm:space-y-3 sm:leading-8'>
+        <div className='font-rubik text-xs space-y-3 leading-4 sm:text-lg sm:space-y-3 sm:leading-7 md:text-lg lg:text-xl'>
             <div>
                 <h1 className='font-semibold text-3xl sm:text-5xl '>Hello!</h1>
                 <p className='invisible hidden text-sm text-gray-600 sm:visible sm:inline-block'>
