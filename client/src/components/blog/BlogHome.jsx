@@ -10,7 +10,7 @@ export default function BlogHome({ articles }) {
 
 
     return (
-        <div className='space-y-6 mb-8 overflow-scroll'>
+        <div className='space-y-6 mb-8 overflow-auto'>
             {articleList.reverse()}        
         </div>
     )

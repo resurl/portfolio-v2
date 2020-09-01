@@ -41,7 +41,7 @@ export default function ProjectView(props) {
     }
   
     return (
-      <div className='overflow-scroll space-y-4 h-full'>
+      <div className='overflow-auto space-y-4 h-full'>
         {loaded ? entries : loadingData()}
       </div>
     )
