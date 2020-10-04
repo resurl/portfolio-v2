@@ -1,5 +1,5 @@
 # resurreccion.tech
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/07c14e66-4e1c-45db-870f-f68dd6ad42dc/deploy-status)](https://app.netlify.com/sites/quizzical-dubinsky-647f0a/deploys)
 ![site preview](https://github.com/resurreccionl/portfolio-v2/blob/master/client/public/preview.png)
 My personal website built with Gatsby, Strapi and Tailwind CSS.
 
