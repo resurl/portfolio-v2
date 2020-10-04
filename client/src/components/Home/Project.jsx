@@ -19,7 +19,7 @@ export default function Project(props) {
     return (
       <div className='overflow-hidden cursor-pointer' onClick={toggleExpand}>
         <div className='flex justify-between'>
-          <h1 className='font-semibold'>{props.name}</h1> 
+    <h1><span className='font-semibold'>{props.name}</span> {props.when}</h1> 
         </div>
         <div className={expand ? '' : 'hidden'}>
           <p className='text-sm'>{props.langs}</p>
